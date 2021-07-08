@@ -1,0 +1,22 @@
+﻿@model List<InstagramDraw.Models.UserModel>
+
+    <body>
+        <table class="table table-bordered table-striped" id="family-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Score</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var user in Model)
+                {
+                    <tr>
+                        <td>@user.UserName</td>
+                        <td>@user.Score</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </body>
+
